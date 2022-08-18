@@ -10,4 +10,8 @@ class ItemModel {
   final String imageURL;
   final DateTime relaseDate;
   final String id;
+
+  String daysleft() {
+    return relaseDate.difference(DateTime.now()).inDays.toString();
+  }
 }
